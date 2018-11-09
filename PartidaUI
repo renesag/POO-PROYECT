@@ -1,5 +1,5 @@
 public class miPartida implements PartidaUI{
-	int contadorRondas=0;
+	
 
 
 	public void muestraEsatdoPartida();
@@ -8,20 +8,39 @@ public class miPartida implements PartidaUI{
 	public void iniciaPartida(){
 		System.out.println("Empezando partida");
 		//crear personajes 
-		Personaje h1 = new Personaje();
+		// Personaje h1 = new Personaje();
+		for (x=1;x<7;x++){
+			limpiaMensajes();
+			System.out.println("\ninicia ronda " + x);
+			iniciaRonda();
+		}
 		
 	public void iniciaRonda(){
-		for (x=0;x<3;x++){
-			contadorRondas
+		// "personaje" en la coleccion de personajes (tres personajes)
+			System.out.println("\n inicia turno de "+personaje);
 			iniciaTurno();
 		}
+	}
+	
+	public void iniciaTurno(){
+		//preguntar que desea hacer 
+		//mandar a llamar respectiva funcion(no esta aqui)
+	
+	
 	}
 	public void terminaRonda(){
 		System.out.println("La ronda ha termionado");
 	}
-	public void iniciaTurno();
-	public void termina turno();
-	public void terminaPartida();
+	
+	public void termina turno(){
+		System.out.println("El turno ha terminado"+ personaje);
+	}
+	public void terminaPartida(){
+		System.out.println("Game over");
+		
+	}
+	
+	
 	public void despliegaMensaje(String mensaje);
 	public void despliegaError(String error);
 	
