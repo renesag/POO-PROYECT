@@ -1,0 +1,3 @@
+public interface Accion{
+	public void ejecuta();
+}
