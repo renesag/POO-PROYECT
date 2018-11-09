@@ -1,13 +1,32 @@
-public interface PartidaUI{
+public class miPartida implements PartidaUI{
+	int contadorRondas=0;
+
+
 	public void muestraEsatdoPartida();
 	public void configurando();
-	public void iniciaPartida();
-	public void iniciaRonda();
-	public void terminaRonda();
+	
+	public void iniciaPartida(){
+		System.out.println("Empezando partida");
+		//crear personajes 
+		Personaje h1 = new Personaje();
+		
+	public void iniciaRonda(){
+		for (x=0;x<3;x++){
+			contadorRondas
+			iniciaTurno();
+		}
+	}
+	public void terminaRonda(){
+		System.out.println("La ronda ha termionado");
+	}
 	public void iniciaTurno();
 	public void termina turno();
 	public void terminaPartida();
 	public void despliegaMensaje(String mensaje);
 	public void despliegaError(String error);
-	public void limpiaMensajes();
+	
+	public void limpiaMensajes(){
+		for (int i=0; i < 30; i++){
+			System.out.println();
+                 }
 }
