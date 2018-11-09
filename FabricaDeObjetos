@@ -1,6 +1,11 @@
-public interface FabricaDeObjetos{
-	public Personaje construyePersonajeDesdeCadena(String cadena);
-	public Collection<Personajes> cargaPersonajesDesdeArchivo(String archivo);
+public implements FabricaDeObjetos{
+	public Personaje construyePersonajeDesdeCadena(String cadena){
+		Personaje cadena = new Personaje(cadena);
+	}
+	
+	public Collection<Personajes> cargaPersonajesDesdeArchivo(String archivo){
+	
+	}
 	public Collection<Item> construyeUnItemDeCadaClase();
 	public Item construyeItemPorNombre(String nombre);
 	public Collection<Ataque> construyeUnAtaqueDeCadaClase();
