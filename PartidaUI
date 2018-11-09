@@ -1,9 +1,22 @@
+import java.util.Scanner;
+
 public class miPartida implements PartidaUI{
-	
+	Scanner scan = new Scanner(System.in);
 
 
 	public void muestraEsatdoPartida();
-	public void configurando();
+	public void configurando(){
+	System.out.print("Dame el numero de rondas:\n>");
+	int nrondas = scan.nextInt();
+	
+	System.out.print("Numero de items que tendra cada personaje:\n>");
+	Itemvida it= new Itemvida(scan.ne)
+	int nitems = scan.nextInt();
+	
+		
+		//pedir numero de prtidas 
+	
+	}
 	
 	public void iniciaPartida(){
 		System.out.println("Empezando partida");
