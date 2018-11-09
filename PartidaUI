@@ -1,0 +1,13 @@
+public interface PartidaUI{
+	public void muestraEsatdoPartida();
+	public void configurando();
+	public void iniciaPartida();
+	public void iniciaRonda();
+	public void terminaRonda();
+	public void iniciaTurno();
+	public void termina turno();
+	public void terminaPartida();
+	public void despliegaMensaje(String mensaje);
+	public void despliegaError(String error);
+	public void limpiaMensajes();
+}
