@@ -1,0 +1,78 @@
+package poo.videojuego.ui;
+import java.util.Scanner;
+
+public class PartidaPrueba implements Partida{
+	Scanner scan = new Scanner(System.in);
+	private FabricaDeObjetos fabrica;
+	private String archivo;
+	private PartidaUI ui;
+	private int totalRondas;
+	private int itemsIniciales;
+
+	private int rondaActual;
+	private Personaje personajeEnTurno;
+	private Collection<Item> itemsDisponibles;
+	private Collection<Ataque> ataquesDisponibles;
+	private Collection<Personaje> personajes; 
+	private MiAtaque ataque;
+	private MiItem item;
+	private AgregaAtaque AgregaAtaque;
+
+	public void configura(FabricaDeObjetos fabrica,String archivo,PartidaUI ui,int totalRondas,int itemsIniciales){
+			this.fabrica=fabrica;
+			this.archivo=archivo;
+			this.ui=ui;
+			this.totalRondas=totalRondas;
+			this.itemsIniciales=itemsIniciales;
+
+	}
+
+
+	public void inicia(){
+		ui.iniciaPartida();
+		for (x=1;x<=totalRondas;x++){
+			System.out.println("Inicia ronda "+x);
+			ui.iniciaRonda();
+			for(Personaje col : personajes){
+				ui.iniciaTurno();
+				System.out.println("inicia turno de "+col.getNombre());
+				System.out.print("que accion deseas realizar: \n 1. Atacar 2. Tomar Item 3. Agregar Ataque ");
+				int opc = scan.nextInt();
+				if(opc == 1){
+					MiAtaque ataque = new MiAtaque();
+					ejecutaAccion(ataque);
+				}
+
+			}
+		}
+	}
+
+
+	public void ejecutaAccion(Accion accion){
+		accion.ejecuta();
+
+	}
+	public Collection<Item> getItemsDisponibles(){
+		return itemsDisponibles;
+	}
+
+	public Collection<Ataque> getAtaquesDisponibles(){
+		return ataquesDisponibles;
+	}
+	public Collection<Personajes> getPersonajes(){
+		return personajes;
+	}
+	
+	public Personaje getPersonajeEnTurno(){
+		return personjeEnTurno;
+	}
+	public int getRondaActual(){
+		return rondaActual;
+	}
+	public int getTotalRondas(){
+		return totalRondas;
+	}
+	public void itemUsado(Item item){
+
+	}
+}

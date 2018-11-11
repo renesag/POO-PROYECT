@@ -1,0 +1,65 @@
+import java.util.Scanner;
+import AccionAtaque;
+import AccionItem;
+import AccionAgrega;
+public class MiPartidaUI implements PartidaUI{
+	Scanner scan = new Scanner(System.in);
+
+
+	public void muestraEsatdoPartida();
+	public void configurando(){
+	System.out.print("Dame el numero de rondas:\n>");
+	int nrondas = scan.nextInt();
+	
+	System.out.print("Numero de items que tendra cada personaje:\n>");
+	Itemvida it= new Itemvida(scan.ne)
+	int nitems = scan.nextInt();
+	
+		
+		//pedir numero de prtidas 
+	
+	}
+	
+	public void iniciaPartida(){
+		System.out.println("Empezando partida");
+		//iniciaRonda();
+		//crear personajes 
+		// Personaje h1 = new Personaje();
+	}
+		
+	public void iniciaRonda(){
+		// "personaje" en la coleccion de personajes (tres personajes)
+			System.out.println("\n inicia turno de "+personaje);
+			iniciaTurno();
+			ArrayList<Personajes> listaPer = new ArrayList<Personajes>();
+	
+			}
+	}
+	
+	public void iniciaTurno(){
+		//preguntar que desea hacer 
+		//mandar a llamar respectiva funcion(no esta aqui)
+		System.out.printn("turno iniciado");
+	
+	}
+	public void terminaRonda(){
+		System.out.println("La ronda ha termionado");
+	}
+	
+	public void termina turno(){
+		System.out.println("El turno ha terminado"+ personaje);
+	}
+	public void terminaPartida(){
+		System.out.println("Game over");
+		
+	}
+	
+	
+	public void despliegaMensaje(String mensaje);
+	public void despliegaError(String error);
+	
+	public void limpiaMensajes(){
+		for (int i=0; i < 30; i++){
+			System.out.println();
+                 }
+}

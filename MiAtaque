@@ -1,0 +1,41 @@
+package poo.videojuegos.ui;
+public class MiAtaque implements Accion{
+	public void ejecuta();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					System.out.println(getAtaquesDisponibles());
+					for(Ataque a : getAtaquesDisponibles()){
+						System.out.println(a.getNombre());
+					}
+					System.out.println("que ataque quieres: ");
+					String atac = scan.next();
+					for(Ataque a : getAtaquesDisponibles()){
+						if(a.getNombre.equals(scan.next()){
+							ejecutaAccion(a);
+							break;
+						} 
+					}
+					
+		
